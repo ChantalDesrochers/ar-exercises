@@ -5,7 +5,7 @@ puts "----------"
 
 # Your code goes below here ...
 class Store < ActiveRecord::Base
-
+has_many :employees
 end
 
 burnaby = Store.new(name: "burnaby", annual_revenue: 300000, mens_apparel: true, womens_apparel: true)
